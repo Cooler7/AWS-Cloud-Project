@@ -4,3 +4,5 @@ This project was created using the AWS Cloud Services implemented on Linux based
 This repository was created as a class project and evaluated by a teacher who specializes and uses the AWS Cloud Services daily.
 
 Feel free to browse and use this repository freely. This repository was purely made for Educational purposes only.
+
+![topologia projeto](https://user-images.githubusercontent.com/32963070/151957537-9ddefe8e-c34d-4d77-8945-1da79cdac81a.jpg)
