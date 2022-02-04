@@ -3,3 +3,4 @@ control.inova.pt is updated and www.inova.pt is connected with internet via cont
 control.enta.pt is uptaded but still needs to configure the internet connection with iptables and establish internet connection via www.enta.pt 
 
 Password for central.inova.pt /dev/md0: Super@Passw0rd
+Password for central.inova.pt LUKSADDKEY /dev/md0: Passw0rd
