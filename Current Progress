@@ -11,6 +11,9 @@ Raid 5 and Raid 6 on Inova are done!
 Password for central.enta.pt /dev/md0: Super@Passw0rd
 Password for central.enta.pt LUKSADDKEY /dev/md0: Super@Passw0rd1
 Password for wazuh.enta.pt  /dev/vg1/vg1lv0: Super@Passw0rd
+Raid 5 and Raid 6 on Enta are done!
+
+
 
 DNS on Ubuntu done!
 DNS on Ec2 done!
