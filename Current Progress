@@ -19,4 +19,12 @@ DNS on Ubuntu done!
 DNS on Ec2 done!
 
 Next: Configure OpenVpn and the Certificates with ubuntu server as subordinate and ec2 as certificate authority.
+OPENVPN:
+created 3 certificates using:
+./easyrsa build-server-full vpn.enta.pt nopass
+./easyrsa build-client-full vpn.inova.pt nopass
+./easyrsa build-client-full vpn.remote.client.pt nopass
+
+Now I need to edit server_ss.conf and server_ra.conf!!
+
 And create another certificate for called teleport.enta.pt
