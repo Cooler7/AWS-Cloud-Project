@@ -26,5 +26,8 @@ created 3 certificates using:
 ./easyrsa build-client-full vpn.remote.client.pt nopass
 
 Now I need to edit server_ss.conf and server_ra.conf!!
+Just enabled Apache2, HTTPS on Ubuntu at www.inova.pt
+
+Need to enable Https using Nginx at www.enta.pt...
 
 And create another certificate for called teleport.enta.pt
