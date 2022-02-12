@@ -28,6 +28,9 @@ created 3 certificates using:
 Now I need to edit server_ss.conf and server_ra.conf!!
 Just enabled Apache2, HTTPS on Ubuntu at www.inova.pt
 
+Created a client called sales.inova.pt using ubuntu nad created 3 users for email:
+maria, miguel and jorge all with the same password using: Passw0rd
+
 Need to enable Https using Nginx at www.enta.pt...
 
 And create another certificate for called teleport.enta.pt
