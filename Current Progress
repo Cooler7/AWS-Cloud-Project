@@ -30,6 +30,7 @@ Just enabled Apache2, HTTPS on Ubuntu at www.inova.pt
 
 Created a client called sales.inova.pt using ubuntu nad created 3 users for email:
 maria, miguel and jorge all with the same password using: Passw0rd
+Having a problem with miguel and jorge but maria worked fine when using RDP and setting up the email accounts.
 
 Need to enable Https using Nginx at www.enta.pt...
 
