@@ -32,6 +32,8 @@ Created a client called sales.inova.pt using ubuntu nad created 3 users for emai
 maria, miguel and jorge all with the same password using: Passw0rd
 Having a problem with miguel and jorge but maria worked fine when using RDP and setting up the email accounts.
 
+Created manuel user at central for NFS
+
 Need to enable Https using Nginx at www.enta.pt...
 
 And create another certificate for called teleport.enta.pt
