@@ -30,10 +30,13 @@ Just enabled Apache2, HTTPS on Ubuntu at www.inova.pt
 
 Created a client called sales.inova.pt using ubuntu nad created 3 users for email:
 maria, miguel and jorge all with the same password using: Passw0rd
-Having a problem with miguel and jorge but maria worked fine when using RDP and setting up the email accounts.
+Fixed my problem with miguel and jorge turns out I had to use different ports because Thunderbird changed its layout.
 
-Created manuel user at central for NFS
+Created manuel user at central for to use for NFS
+
 NIS is working on ubuntu inova.pt!
+
+Email, NIS and NFS are working at Ubuntu's side.
 
 Need to enable Https using Nginx at www.enta.pt...
 
