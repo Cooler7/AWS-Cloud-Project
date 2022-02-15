@@ -23,4 +23,14 @@ nano 50-cloud-init.yaml   #edit the file, DO NOT USE TAB BUTTON
 
 #edit the file like this:
 
-![image](https://user-images.githubusercontent.com/32963070/154146515-0a48a810-fc61-41d4-a1a0-4bc73a11f0d0.png)
+![image](https://user-images.githubusercontent.com/32963070/154146751-a49ab10a-5d93-4994-97ab-644716184de4.png)
+
+
+#after enabling DNS you can change the  [ 8.8.8.8 ] to the ip from your server that comes from the cloud
+
+netplan try   #this will attempt to enable the previous change, if it's incorrect you can revert it, if it's accept just press ENTER and then ping to the internet
+
+ping 1.1.1.1
+
+#if packets are sent CONGRATS! You just enabled the internet on a client which is connected to a main server
+#now do the same steps as above to the other clients
