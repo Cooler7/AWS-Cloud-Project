@@ -1,0 +1,21 @@
+ sudo amazon-linux-extras install epel
+
+ yum groupinstall "MATE Desktop"
+
+ sudo yum install xrdp chromium
+
+ systemctl enable --now xrdp
+
+#all clients will have a GUI
+
+sudo bash -c 'echo PREFERRED=/usr/bin/mate-session > /etc/sysconfig/desktop'
+
+#Exit root
+
+ adduser user  #adds user called user
+
+ passwd user
+
+ login user
+
+ echo "/usr/bin/mate-session" > ~/.Xclients && chmod +x ~/.Xclients
