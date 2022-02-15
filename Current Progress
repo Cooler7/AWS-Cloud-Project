@@ -38,6 +38,5 @@ NIS is working on ubuntu inova.pt!
 
 Email, NIS and NFS are working at Ubuntu's side.
 
-Need to enable Https using Nginx at www.enta.pt...
+HTTPS is neabled using nginx
 
-And create another certificate for called teleport.enta.pt
