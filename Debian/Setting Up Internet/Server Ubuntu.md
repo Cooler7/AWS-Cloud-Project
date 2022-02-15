@@ -49,6 +49,7 @@ nano /etc/sysctl.conf
 #net.ipv4.ip_forward=1
 
 #after
+
 net.ipv4.ip_forward=1
 
 #then hit CTRL + X then Y then ENTER to save your configuration for that file
