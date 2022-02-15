@@ -120,7 +120,7 @@ mail_location = maildir:~/Maildir
 
 nano /etc/dovecot/conf.d/10-ssl.conf
 
-> ssl = yes
+ > ssl = yes
 
 #UNCOMMENT AND EDIT:
 
@@ -130,7 +130,7 @@ ssl_key = </etc/ssl/private/azores.pt.key
 
 cd /etc/skel/
 
-> maildirmake.dovecot Maildir
+ > maildirmake.dovecot Maildir
  adduser postfix sasl
 
 adduser dovecot sasl
@@ -153,3 +153,30 @@ adduser jorge
 ss -tulp | grep master
 
  ss -tulp | grep dovecot
+ 
+ #Copy the certificates created at control.inova.pt and paste them here:
+   
+   > "/etc/ssl/certs/azores.pt.crt"
+   
+   > "/etc/ssl/private/azores.pt.key"
+
+
+#To finish go to sales.inova.pt
+
+ # Exit root.
+ 
+ sudo apt install -y xfce4 xfce4-goodies
+ 
+ - lightdm
+ 
+ sudo apt install -y xrdp chromium-browser filezilla thunderbird   #chromium is the web browser that we are going to use, filezilla is the FTP program and thunderbird is the email server
+ 
+ sudo adduser xrdp ssl-cert
+ 
+ echo xfce4-session > ~/.xsession
+ 
+ sudo reboot
+ 
+ 
+ #after all of that, use RDP like windows remote desktop or REMNINA at Linux systems to use the remote desktop client to send and recieve email
+ #setup an account, and use the protocols you established
