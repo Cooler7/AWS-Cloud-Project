@@ -34,3 +34,5 @@ ping 1.1.1.1
 
 #if packets are sent CONGRATS! You just enabled the internet on a client which is connected to a main server
 #now do the same steps as above to the other clients
+
+#After sending the packets update and upgrade the machine and now you can install packages and other tools on that machine
