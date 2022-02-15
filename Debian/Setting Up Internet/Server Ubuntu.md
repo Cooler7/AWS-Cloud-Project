@@ -43,6 +43,7 @@ netfilter-persistent save
 nano /etc/sysctl.conf
 
 #uncomment, just remove the hashtag
+
 #before
 
 #net.ipv4.ip_forward=1
