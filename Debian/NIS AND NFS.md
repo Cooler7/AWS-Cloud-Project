@@ -40,3 +40,54 @@ cat /etc/mtab
 #Copy the line above paste here ( /etc/fstab ) and add ,nofail
 
 #then reboot your machine and hope it does not cause an error!
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+NIS SETUP
+
+#at central.inova.pt
+
+apt -y install nis
+
+- NIS DOMAIN: enta.pt
+
+nano /etc/default/nis
+
+- NISSERVER=master
+
+nano /etc/ypserv.securenets
+
+# This line gives access to everybody. PLEASE ADJUST! (change 0.0.0.0 / 0.0.0.0 to mask and private network)
+
+255.255.255.0         "private ipserver"
+
+# add to the end: IP range you allow to access
+
+255.255.255.0         "private ipserver"
+
+nano /var/yp/Makefile
+
+- MERGE_PASSWD=true
+
+- MERGE_GROUP=true
+
+Update Database: /usr/lib/yp/ypinit -m
+
+list, type a <control D>.
+
+ next host to add:  entasrv.enta.pt
+ 
+ next host to add:       #simply use CTRL + D
+ 
+ The current list of NIS servers looks like this:
+
+ systemctl restart nis
+
+# after nis restart If you added users in local server, apply them to NIS database like so:
+ 
+ - cd /var/yp
+ 
+ - make
+
+
+
