@@ -89,5 +89,60 @@ list, type a <control D>.
  
  - make
 
+-----------------------------------------------------------------------------------------------------
+ 
+ #at sales.inova.pt
+ 
+  
+apt -y install nis
+
+ - NIS DOMAIN: inova.pt
+
+nano /etc/yp.conf
+
+ # ypserver ypserver.network.com
+ 
+ # add to the end: [domain name] [server] [NIS server's hostname]
+ 
+ domain enta.pt server entasrv.enta.pt
+
+ nano /etc/nsswitch.conf
+ 
+ - passwd: #add "nis" to the end
+ 
+ - group: #add "nis" to the end
+ 
+ - shadow: #add "nis" to the end
+ 
+ - hosts: #add "nis" to the end
+
+ nano /etc/pam.d/common-session
+ 
+ - #add: session optional        pam_mkhomedir.so skel=/etc/skel umask=077
+
+ systemctl restart nis
+
+ #when root use: login   
+ 
+ - User that you have created early.  #in this case manuel
+ 
+ - Password.
 
 
+ 
+ 
+ #install GUI 
+ 
+  Leave root.
+
+ sudo apt install -y xfce4 xfce4-goodies
+ 
+ - lightdm
+
+ sudo apt install -y xrdp chromium-browser 
+
+ sudo adduser xrdp ssl-cert
+
+ echo xfce4-session > ~/.xsession
+
+ sudo reboot
